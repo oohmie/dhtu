@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    /* var button */
+    --butt-back-color: #fee3c1;
+    --butt-color: black;
+    --butt-font-size: 16px;
+    --butt-padding: 8px 16px;
+
+}
+
+body{
+    background-color: rgb(84,84,84);
+}
+
+/* h1.{
+    text-align: center;
+    font-size: 72px;
+    padding: 25px;
+    background-color: rgb(253, 169, 72);
+}
+h2{
+    text-align: center;
+    padding: 25px;
+    color: white;
+} */
+
+/*.map{
+    max-width: 100%
+}
+
+
+/*rainbow scroll open*/
+::-webkit-scrollbar{
+    width: 0;
+}
+#scrollPath
+{
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+}
+#progressbar
+{
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    
+    background: linear-gradient(to top, #088aff,#00ffe7);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+#progressbar:before
+{
+    content:'';
+    position: absolute;
+    top:0; 
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #088aff,#00ffe7);
+    filter:blur(10px);
+}
+#progressbar:after
+{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #088aff,#00ffe7);
+    filter:blur(30px);
+}
+/*rainbow scroll end*/
+
+/* .review{
+    width: 80%;
+    height: 20%;
+    margin: 10px auto;
+    background-color: rgb(109,109,109);   
+} */
+/*Function when touch button on map open*/
+/* Container needed to position the button. Adjust the width as needed */
+
+.MapBox {
+    background-image: url("Map1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    aspect-ratio: 906/906; /*990/906*/
+    text-align: center
+}
+  
+  /* Make the image responsive */
+.MapBox img {
+    
+    display: inline-block;}
+
+  
+  /* Style the button and place it in the middle of the MapBox/image */
+#BR1{
+    position: absolute;
+    top:  10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: var(--butt-back-color);
+    color: var(--butt-color); */
+    font-size: var(--butt-font-size);
+    padding: var(--butt-padding);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#BR2{
+    position: absolute;
+    top:  22%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: var(--butt-back-color);
+    color: var(--butt-color); */
+    font-size: var(--butt-font-size);
+    padding: var(--butt-padding);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#BR3{
+    position: absolute;
+    top:  22%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: var(--butt-back-color);
+    color: var(--butt-color); */
+    font-size: var(--butt-font-size);
+    padding: var(--butt-padding);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#BR4{
+    position: absolute;
+    top:  37%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: var(--butt-back-color);
+    color: var(--butt-color); */
+    font-size: var(--butt-font-size);
+    padding: var(--butt-padding);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#BR5{
+    position: absolute;
+    top:  37%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: var(--butt-back-color);
+    color: var(--butt-color); */
+    font-size: var(--butt-font-size);
+    padding: var(--butt-padding);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#BR6{
+    position: absolute;
+    top:  37%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: var(--butt-back-color);
+    color: var(--butt-color); */
+    font-size: var(--butt-font-size);
+    padding: var(--butt-padding);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#BR7{
+    position: absolute;
+    top:  37%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: var(--butt-back-color);
+    color: var(--butt-color); */
+    font-size: var(--butt-font-size);
+    padding: var(--butt-padding);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#BR8{
+    position: absolute;
+    top:  38%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: var(--butt-back-color);
+    color: var(--butt-color); */
+    font-size: var(--butt-font-size);
+    padding: var(--butt-padding);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#BR9{
+    position: absolute;
+    top:  56%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: var(--butt-back-color);
+    color: var(--butt-color); */
+    font-size: var(--butt-font-size);
+    padding: var(--butt-padding);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#BR10{
+    position: absolute;
+    top:  56%;
+    left: 91%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: var(--butt-back-color);
+    color: var(--butt-color); */
+    font-size: var(--butt-font-size);
+    padding: var(--butt-padding);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#BR11{
+    position: absolute;
+    top:  80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: var(--butt-back-color);
+    color: var(--butt-color); */
+    font-size: var(--butt-font-size);
+    padding: var(--butt-padding);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* .MapBox .btn:hover {
+    background-color: black;
+} */
+
+html {
+    scroll-behavior: smooth;
+   }
+  /*Function when touch button on map End*/
